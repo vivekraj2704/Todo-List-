@@ -1,7 +1,7 @@
 
 export function CreateTodo() {
-    const {title, setTitle} = useState("");
-    const {description, setDescription} = useState("");
+    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState("");
     return <div>
         <input id="title" style={{padding: 10, margin: 10}} type="text" placeholder="title" onChange={function(e) {
             setTitle(e.target.value);
